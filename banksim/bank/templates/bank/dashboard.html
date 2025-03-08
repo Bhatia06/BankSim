@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome, {{ account.username }}</h1>
+<p>Your User ID: {{ account.idno }}</p>
+
+<a href="{% url 'show_balance' %}"><button>Balance</button> </a><br><br>
+<a href="{% url 'credit' %}"><button>Make Payment</button></a><br><br>
+<a href="{% url 'view_transactions' %}"><button>See Transactions</button></a><br><br>
+<a href="{% url 'logout' %}"><button>Logout</button></a>
+</body>
+</html>
